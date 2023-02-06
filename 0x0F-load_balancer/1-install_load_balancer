@@ -16,8 +16,8 @@ frontend  ayotunde-frontend
         default_backend ayotunde-backend
 backend ayotunde-backend
         balance roundrobin
-        server 91958-web-01 54.146.60.194 check
-        server 91958-web-02 54.237.225.54 check
+        server 91958-web-01 100.25.141.141 check
+        server 91958-web-02 34.224.5.86 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
